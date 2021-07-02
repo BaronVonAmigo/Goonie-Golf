@@ -40,7 +40,6 @@ next_world_scene = "res://ui/main menu/MainMenuUI.tscn"
 
 [node name="NightSkyAnimated" parent="." instance=ExtResource( 1 )]
 position = Vector2( 320, 176 )
-frame = 1
 
 [node name="basket" type="Sprite" parent="."]
 position = Vector2( 320, 200 )
@@ -49,20 +48,23 @@ texture = ExtResource( 5 )
 
 [node name="Ocean" parent="." instance=ExtResource( 2 )]
 position = Vector2( 128, 304 )
-frame = 2
+frame = 1
 
 [node name="Ocean2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 376, 304 )
+frame = 2
 
 [node name="Ocean3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 632, 304 )
+frame = 2
 
 [node name="Ocean4" parent="." instance=ExtResource( 2 )]
 position = Vector2( -128, 304 )
-frame = 0
+frame = 2
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+volume_db = -18.547
 autoplay = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
